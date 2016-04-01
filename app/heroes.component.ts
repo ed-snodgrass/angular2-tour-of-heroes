@@ -66,8 +66,7 @@ import {HeroDetailComponent} from './hero-detail.component';
     border-radius: 4px 0 0 4px;
   }
 `],
-    directives: [HeroDetailComponent],
-    providers: [HeroService]
+    directives: [HeroDetailComponent]
 })
 
 export class HeroesComponent implements OnInit{
