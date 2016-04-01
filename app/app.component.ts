@@ -12,7 +12,12 @@ import {Component} from 'angular2/core';
         <span class="badge">{{hero.id}}</span> {{hero.name}}
       </li>
     </ul>
-
+    <h2>{{hero.name}} details!</h2>
+    <div><label>id: </label>{{hero.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name">
+    </div>
     `,
     styles:[`
   .selected {
@@ -68,6 +73,10 @@ import {Component} from 'angular2/core';
 export class AppComponent {
     title = 'Tour of Heroes';
     public heroes = HEROES;
+    hero: Hero = {
+        id: 1,
+        name: 'Windstorm'
+    };
 }
 
 export class Hero {
