@@ -4,7 +4,6 @@ import {Router} from 'angular2/router';
 import {Hero} from './hero';
 import {HeroService} from './hero.service';
 
-
 @Component({
     selector: 'my-dashboard',
     templateUrl: 'app/dashboard.html'
@@ -23,7 +22,6 @@ export class DashboardComponent implements OnInit {
 
     gotoDetail(hero: Hero) {
         let link = ['HeroDetail', {id: hero.id }];
-        console.log(link);
         this._router.navigate(link);
     }
 }
