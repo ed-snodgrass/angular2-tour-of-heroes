@@ -13,7 +13,6 @@ import {HeroDetailComponent} from './hero-detail.component';
         <span class="badge">{{hero.id}}</span> {{hero.name}}
       </li>
     </ul>
-    <my-hero-detail [hero]="selectedHero"></my-hero-detail>
     `,
     styles:[`
   .selected {
