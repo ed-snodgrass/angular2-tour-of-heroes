@@ -4,9 +4,8 @@ import {Hero} from './hero';
 import {HeroService} from './hero.service';
 import {HeroDetailComponent} from './hero-detail.component';
 
-
 @Component({
-    selector: 'my-app',
+    selector: 'my-heroes',
     template: `
     <h1>{{title}}</h1>
 
@@ -71,7 +70,7 @@ import {HeroDetailComponent} from './hero-detail.component';
     providers: [HeroService]
 })
 
-export class AppComponent implements OnInit{
+export class HeroesComponent implements OnInit{
     ngOnInit() {
         this.getHeroes();
     }
