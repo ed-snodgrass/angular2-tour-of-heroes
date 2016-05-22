@@ -1,9 +1,9 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
-import {HeroService} from './hero.service';
-import {HeroesComponent} from './heroes.component';
-import {DashboardComponent} from "./dashboard.component";
-import {HeroDetailComponent} from "./hero-detail.component";
+import {HeroService} from './hero/hero.service';
+import {HeroesComponent} from './hero/heroes.component';
+import {DashboardComponent} from "./dashboard/dashboard.component";
+import {HeroDetailComponent} from "./hero/detail/hero-detail.component";
 
 @Component({
     selector: 'my-app',
